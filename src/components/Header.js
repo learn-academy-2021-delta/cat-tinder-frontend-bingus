@@ -1,24 +1,25 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
-// import catLogo from '../assets/cat-logo.png'
+import bingusMyBeloved from '../assets/bingus-my-beloved.jpeg'
 
 class Header extends Component {
   render() {
     return (
       <header>
-        {/* <NavLink to="/">
-          <img src={catLogo} alt="logo for Cat Tinder" className="cat-logo"/>
+        <h1>Cat Tinder </h1>
+        <NavLink to="/">
+          <img src={bingusMyBeloved} alt="logo for Cat Tinder" className="bingusMyBeloved"/>
         </NavLink>
         <div className="nav-links">
           <ul>
-            <NavLink to="/catindex">Meet the Cats</NavLink>
+            <NavLink to="/catindex">Find your Me-atch</NavLink>
           </ul>
           <ul>
-            <NavLink to="/catnew">Add a Cat</NavLink>
+            <NavLink to="/catnew">Add Playmate</NavLink>
           </ul>
-        </div> */}
+        </div>
       </header>
     )
   }
 }
-export default Header
+export default Header 

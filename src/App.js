@@ -7,6 +7,7 @@ import CatShow from './pages/CatShow'
 import CatNew from './pages/CatNew'
 import CatEdit from './pages/CatEdit'
 import NotFound from './pages/NotFound' 
+import './App.css'
 import cats from './mockCats';
 import {
   BrowserRouter as Router,
