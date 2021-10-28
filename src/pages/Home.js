@@ -6,8 +6,12 @@ class Home extends Component {
     return (
       <div id="home-container">
         <h3 className="home">I am the Home</h3>
+        <div id="button-container">
         <button onClick={this.props.alert}>Sign up Today!</button>
+        <br />
+        <br />
         <button onClick={this.props.alert}>Log in</button>
+        </div>
       </div>
     )
   }
