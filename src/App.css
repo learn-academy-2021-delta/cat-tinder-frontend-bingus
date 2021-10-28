@@ -37,7 +37,7 @@ footer{
   text-align: center;
 }
 
-#home-container{
+.body-container{
   height: 85vh;
   background-color: white;
   display: flex;
