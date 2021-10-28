@@ -37,3 +37,18 @@ footer{
   text-align: center;
 }
 
+#home-container{
+  height: 85vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home{
+  background-color: white;
+}
+
+button{
+  background-color: hotpink;
+}
