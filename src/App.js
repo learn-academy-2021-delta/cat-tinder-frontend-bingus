@@ -21,14 +21,20 @@ class App extends Component {
     this.state = {
       cats: cats
     }
+    this.handleClick = this.handleClick.bind(this);
   }
+
+handleClick(){
+console.log('alert test');
+}
+
   render() {
-    console.log(this.state.cats)
+    this.handleClick()
     return (
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Home} alert={this.handleClick()}/>
           <Route path="/catindex" component={CatIndex} />
           <Route path="/catshow" component={CatShow} />
           <Route path="/catnew" component={CatNew} />
