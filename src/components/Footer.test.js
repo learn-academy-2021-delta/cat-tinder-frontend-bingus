@@ -8,9 +8,10 @@ Enzyme.configure({ adapter: new Adapter() })
 describe('When Footer loads...',()=>{
 
     it('displays three NavLinks', ()=>{
-   const footerWrapper = shallow(<Footer/>)
-   const navLinkWrapper = footerWrapper.find("NavLink")
+        
+        const footerWrapper = shallow(<Footer/>)
+        const navLinkWrapper = footerWrapper.find("NavLink")
    
-   expect(navLinkWrapper.length).toEqual(3)
+        expect(navLinkWrapper.length).toEqual(3)
    })
 })

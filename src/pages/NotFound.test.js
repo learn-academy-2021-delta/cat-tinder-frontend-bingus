@@ -8,10 +8,11 @@ Enzyme.configure({ adapter: new Adapter() })
 describe('When NotFound loads...',()=>{
 
     it('displays an img', ()=>{
-   const notfoundWrapper = shallow(<NotFound/>)
-   const imgWrapper = notfoundWrapper.find('img')
+        
+        const notfoundWrapper = shallow(<NotFound/>)
+        const imgWrapper = notfoundWrapper.find('img')
    
-   expect(imgWrapper.length).toEqual(1)
+        expect(imgWrapper.length).toEqual(1)
    })
    })
    
