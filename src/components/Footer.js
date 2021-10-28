@@ -6,13 +6,13 @@ class Footer extends Component{
     return(
       <footer>
         <ul>
-          <NavLink to="/">Team Bingus</NavLink>
+          <NavLink to="/"> Meet Team Bingus</NavLink>
         </ul>
         <ul>
-          <NavLink to="/catindex">Meet the Cats</NavLink>
+          <NavLink to="/catindex">Find your Me-atch</NavLink>
         </ul>
         <ul>
-          <NavLink to="/catnew">Add a Cat</NavLink>
+          <NavLink to="/catnew">Add a Playmate</NavLink>
         </ul>
       </footer>
     )

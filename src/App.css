@@ -3,18 +3,37 @@
   src: url(./assets/Simplecat-d9xpV.otf);
 }
 
-
-
-header{
-  text-align: center;
+*{
   background-color: pink;
+}
+
+header, footer{
+  text-align: center;
+  display: flex;
   font-family: Simplecat
 }
 
+header{
+  justify-content: space-between;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-right: 50px;
+}
 .bingusMyBeloved{
-  height: 350px;
-  width: 300px;
+  height: 250px;
+  width: 200px;
   margin-left: 20px;
   margin-top: 10px;
-  
 }
+
+footer{
+  justify-content: center;
+}
+
+.page-body{
+  text-align: center;
+}
+
