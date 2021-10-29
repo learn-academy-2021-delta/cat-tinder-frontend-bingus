@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 class Footer extends Component{
   render(){
     return(
-      <footer>
+      <footer className="nav-links">
         <ul>
           <NavLink to="/"> Meet Team Bingus</NavLink>
         </ul>
