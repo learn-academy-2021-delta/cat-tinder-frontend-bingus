@@ -65,20 +65,24 @@ handleSubmit = () => {
             value={this.state.form.enjoys}>
             </Input>
           </FormGroup>
+
           <FormGroup>
-    <Label for="img">
-      Cat Photo
-    </Label>
-    <Input
-      name="img"
-      type="file"
-      onChange={this.handleChange}
-            value={this.state.form.img} />
-    <FormText>
-      Upload a photo for your cat's profile!
-    </FormText>
-  </FormGroup>
-          <Button name="submit"
+            <Label for="img">
+               Cat Photo
+             </Label>
+           <Input
+             name="img"
+             type="file"
+              onChange={this.handleChange}
+             value={this.state.form.img} 
+             />
+               <FormText>
+                 Upload a photo for your cat's profile!
+              </FormText>
+          </FormGroup>
+
+          <Button 
+            name="submit"
             onClick={this.handleSubmit}>
             Join The Litter
           </Button>
