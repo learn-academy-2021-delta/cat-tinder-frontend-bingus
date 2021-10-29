@@ -11,9 +11,11 @@ class CatShow extends Component {
      
         { this.props.cat &&
           <>
-          <p>{this.props.cat.name}</p>
-          <p>{this.props.cat.age}</p>
-          <p>{this.props.cat.enjoys}</p>   
+          {/* <ul id="yucky"> */}
+          <p id="show-name">{this.props.cat.name}</p>
+          <p id="show-age">{this.props.cat.age}</p>
+          <p id="show-enjoy">{this.props.cat.enjoys}</p>   
+          {/* </ul> */}
       </>    
  }
  

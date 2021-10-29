@@ -5,12 +5,13 @@
 
 *{
   background-color: pink;
+  font-family: Simplecat
 }
 
 header, footer{
   text-align: center;
   display: flex;
-  font-family: Simplecat
+
 }
 
 header{
@@ -21,6 +22,7 @@ header{
   flex-direction: row;
   align-items: flex-end;
   padding-right: 50px;
+ 
 }
 .bingusMyBeloved{
   height: 75px;
@@ -66,3 +68,39 @@ button{
   background-color: hotpink;
 }
 
+a {
+  color: #e12e87 !important;
+  text-decoration: none !important;
+}
+a:hover {
+  cursor: pointer !important;
+  color: #c832e6 !important;
+  text-decoration: underline !important;
+}
+
+/* #yucky{
+  background-color: white;
+  
+} */
+
+#show-name{
+  font-weight: bold;
+  font-size: 3rem;
+  position: absolute;
+  margin-top: 15%;
+  top: 10px;
+  background-color: white;
+}
+
+#show-age{
+  position: absolute;
+  font-size: 2rem;
+  margin-left: 40%;
+  left: 20px;
+  background-color: white;
+}
+#show-enjoy{
+  position: absolute;
+  font-size: 1.5rem;
+  background-color: white;
+}
