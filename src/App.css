@@ -4,14 +4,17 @@
 }
 
 *{
-  background-color: pink;
+  /* background-color: pink; */
   font-family: Simplecat
+}
+body{
+  background-color: pink;
 }
 
 header, footer{
   text-align: center;
   display: flex;
-
+  background-color: pink;
 }
 
 header{
@@ -103,4 +106,20 @@ a:hover {
   position: absolute;
   font-size: 1.5rem;
   background-color: white;
+}
+
+#indexheader{
+  font-weight: bold;
+  font-size: 2rem;
+  position: absolute;
+  margin-top: 5%;
+  top: 10px;
+  background-color: white;
+}
+
+
+.index-body{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1rem;
 }
