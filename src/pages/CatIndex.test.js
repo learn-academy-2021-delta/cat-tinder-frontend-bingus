@@ -15,6 +15,6 @@ describe("When CatIndex renders", () => {
         const catIndex = shallow(<CatIndex />)
         const indexHeading = catIndex.find("h3")
         
-        expect(indexHeading.text()).toEqual("I am the Cat Index")
+        expect(indexHeading.text()).toEqual("Meet Your Me-atch!")
     })
 })

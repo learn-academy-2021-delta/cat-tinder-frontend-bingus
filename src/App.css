@@ -49,6 +49,9 @@ footer{
   border-radius: 25px;
   margin: 0 10% 0 10%;
 }
+#showheader{
+align-items: center;
+}
 
 .home{
   background-color: white;
