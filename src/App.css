@@ -35,12 +35,15 @@ footer{
 
 .page-body{
   text-align: center;
+  margin: 3rem;
+  height: 110vh;
 }
 
 .body-container{
   height: 85vh;
   background-color: white;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
@@ -59,3 +62,4 @@ footer{
 button{
   background-color: hotpink;
 }
+
