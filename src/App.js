@@ -21,12 +21,9 @@ class App extends Component {
     this.state = {
       cats: cats
     }
-    // this.handleClick = this.handleClick.bind(this);
+
   }
 
-// handleClick(){
-
-// }
 
   render() {
 
