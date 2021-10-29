@@ -10,7 +10,7 @@ class CatIndex extends Component {
   
       <div className="body-container">
         
-      <h3>Meet Your Me-atch!</h3>
+      <h3 id="indexheader">Meet Your Me-atch!</h3>
       
           {this.props.cats && this.props.cats.map(cat => {
           return ( 
