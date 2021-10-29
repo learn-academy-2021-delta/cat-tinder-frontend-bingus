@@ -4,6 +4,7 @@ import Adapter from 'enzyme-adapter-react-16'
 import App from './App'
 import Home from './pages/Home'
 import CatIndex from './pages/CatIndex'
+import cats from './mockCats.js'
 
 
 Enzyme.configure({ adapter: new Adapter() })
@@ -33,6 +34,6 @@ describe('When the app renders', ()=>{
     const renderedApp = shallow(<App/>)
     const renderedCatIndexRoute = renderedApp.find('[path="/catindex"]')
 
-    expect(renderedCatIndexRoute.props().component).toEqual(CatIndex)
+    expect(renderedCatIndexRoute.props().render()).toEqual(<CatIndex cats={cats} />)
   })
 })
