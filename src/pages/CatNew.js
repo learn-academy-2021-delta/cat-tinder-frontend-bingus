@@ -10,6 +10,8 @@ constructor(props) {
     form: {
       name: "",
       age: "",
+      gender: "",
+      breed: "",
       enjoys: "",
       img: ""
     }
@@ -52,6 +54,28 @@ handleSubmit = () => {
             type="text"
             onChange={this.handleChange}
             value={this.state.form.age}>
+            </Input>
+          </FormGroup>
+
+          <FormGroup>
+            <Label for="gender">
+              Cat's Gender
+            </Label>
+            <Input name="gender"
+            type="text"
+            onChange={this.handleChange}
+            value={this.state.form.gender}>
+            </Input>
+          </FormGroup>
+
+          <FormGroup>
+            <Label for="breed">
+              Cat's Breed
+            </Label>
+            <Input name="breed"
+            type="text"
+            onChange={this.handleChange}
+            value={this.state.form.breed}>
             </Input>
           </FormGroup>
 
