@@ -11,12 +11,16 @@ class CatShow extends Component {
         
         { this.props.cat &&
           <>
+          <div className="other-body-container">
           <p id="show-name">{this.props.cat.name}</p>
           <p id="show-age">{this.props.cat.age}</p>
           <p id="show-gender">{this.props.cat.gender}</p>
           <p id="show-breed">{this.props.cat.breed}</p>
           <p id="show-enjoy">{this.props.cat.enjoys}</p>   
-            <img className="images" src={toast} alt="toast the cat" />
+          </div>
+            <div id="show-img">
+              <img className="images" src={toast} alt="toast the cat" />
+              </div>
         
               <NavLink id="show-edit" to={`/catedit/${this.props.cat.id}`}>
                 Edit Kitty
