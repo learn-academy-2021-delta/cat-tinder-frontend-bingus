@@ -14,7 +14,8 @@ constructor(props) {
       breed: "",
       enjoys: "",
       img: ""
-    }
+    },
+    submitted: false
   }
 }
 
@@ -30,7 +31,7 @@ handleSubmit = () => {
 }
 
   render() {
-    console.log(this.state.form);
+
     return (
       <div className="body-container">
         <h3>I am the Cat New</h3>
