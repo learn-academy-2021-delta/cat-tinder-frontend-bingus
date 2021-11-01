@@ -9,6 +9,8 @@ class Header extends Component {
         <NavLink to="/">
           <img src={bingusMyBeloved} alt="logo for Cat Tinder" className="bingusMyBeloved"/>
         </NavLink>
+
+        <h1 id="title">Cat Tinder</h1>
         
         <div className="nav-links">
           <ul>

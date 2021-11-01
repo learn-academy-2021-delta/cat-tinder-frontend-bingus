@@ -1,0 +1,112 @@
+.body-container{
+    min-height: 88vh;
+    background-color: rgb(254, 222, 222);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin: 0 10% 0 10%;
+  }
+  #showheader{
+    position: absolute;
+    center: 20%;
+    top: 15%;
+    background-color: white;
+  }
+  .images{
+      height: 380px;
+      width: 290px;
+      position: relative;
+      left:80px;
+      object-fit: cover;
+      border-radius:10px;
+  }
+
+  #edit-title{
+    font-size: 2rem;
+    position: top;
+    top: 130px;
+  }
+
+  #show-name{
+    font-weight: bold;
+    font-size: 3rem;
+    position: top;
+    margin-bottom: 53%;
+    left: 12%;
+    background-color: white;
+    border-radius:10px;
+  }
+  #show-age{
+    position: top;
+    font-size: 1.5rem;
+    margin-top: 20%;
+    background-color: white;
+    border-radius:10px;
+  }
+  #show-gender{
+    position: top;
+    font-size: 1.5rem;
+    margin-top: -50%;
+    left: 12%;
+    background-color: white;
+    border-radius:10px;
+  }
+  #show-breed{
+    position: top;
+    font-size: 1rem;
+    margin-bottom: -50%;
+    left: 12%;
+    background-color: white;
+    border-radius:10px;
+  }
+  #show-enjoy{
+    position: top;
+    font-size: 1.5rem;
+    margin-top: 75%;
+    background-color: white;
+    border-radius:10px;
+  }
+  #show-edit{
+    position: absolute;
+    font-size: 1rem;
+    bottom: 200px;
+   
+    background-color: white;
+  }
+  
+  #indexheader{
+    font-weight: bold;
+    font-size: 2rem;
+    position: relative;
+    top: 30px;
+    left: 24rem;
+    margin-bottom: 70%;
+    background-color: white;
+  }
+  
+  
+  .index-body{
+    padding-right: 25%;
+    margin-bottom: 10%;
+    align-items: center;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #a-p{
+      margin: 3rem 3rem 3rem 3rem;
+  }
+  .other-body-container{
+    height: 380px;
+    background-color: rgb(243, 102, 151);
+    width: 290px;
+    position: relative;
+    right: 100px;
+    object-fit: cover;
+    border-radius:10px;
+  }

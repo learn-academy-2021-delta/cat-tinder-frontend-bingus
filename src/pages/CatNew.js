@@ -10,9 +10,12 @@ constructor(props) {
     form: {
       name: "",
       age: "",
+      gender: "",
+      breed: "",
       enjoys: "",
       img: ""
-    }
+    },
+    submitted: false
   }
 }
 
@@ -28,7 +31,7 @@ handleSubmit = () => {
 }
 
   render() {
-    console.log(this.state.form);
+
     return (
       <div className="body-container">
         <h3>I am the Cat New</h3>
@@ -52,6 +55,28 @@ handleSubmit = () => {
             type="text"
             onChange={this.handleChange}
             value={this.state.form.age}>
+            </Input>
+          </FormGroup>
+
+          <FormGroup>
+            <Label for="gender">
+              Cat's Gender
+            </Label>
+            <Input name="gender"
+            type="text"
+            onChange={this.handleChange}
+            value={this.state.form.gender}>
+            </Input>
+          </FormGroup>
+
+          <FormGroup>
+            <Label for="breed">
+              Cat's Breed
+            </Label>
+            <Input name="breed"
+            type="text"
+            onChange={this.handleChange}
+            value={this.state.form.breed}>
             </Input>
           </FormGroup>
 
