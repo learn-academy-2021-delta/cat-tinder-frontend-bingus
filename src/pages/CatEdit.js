@@ -40,7 +40,6 @@ class CatEdit extends Component {
               Cat's Name
             </Label>
             <Input name="name"
-            // placeholder={this.props.cat.name}
             type="text"
             onChange={this.handleChange}
             value={this.state.updateCat.name}>
@@ -52,7 +51,6 @@ class CatEdit extends Component {
               Cat's Age
             </Label>
             <Input name="age"
-            // placeholder={this.props.cat.age}
             type="text"
             onChange={this.handleChange}
             value={this.state.updateCat.age}>
@@ -64,7 +62,6 @@ class CatEdit extends Component {
               Cat's Gender
             </Label>
             <Input name="gender"
-            // placeholder={this.props.cat.gender}
             type="text"
             onChange={this.handleChange}
             value={this.state.updateCat.gender}>
@@ -76,7 +73,6 @@ class CatEdit extends Component {
               Cat's Breed
             </Label>
             <Input name="breed"
-            // placeholder={this.props.cat.breed}
             type="text"
             onChange={this.handleChange}
             value={this.state.updateCat.breed}>
@@ -88,7 +84,6 @@ class CatEdit extends Component {
               Cat's Hobbies and Enjoyments
             </Label>
             <Input name="enjoys"
-            // placeholder={this.props.cat.enjoys}
             type="text"
             onChange={this.handleChange}
             value={this.state.updateCat.enjoys}>
@@ -125,4 +120,3 @@ class CatEdit extends Component {
   }
 }
 export default CatEdit
-// placeholders to be edited at a different time
