@@ -8,7 +8,6 @@ import CatNew from './pages/CatNew'
 import CatEdit from './pages/CatEdit'
 import NotFound from './pages/NotFound' 
 import './App.css'
-import cats from './mockCats.js';
 import {
   BrowserRouter as Router,
   Route,
@@ -19,11 +18,19 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      cats: cats
+      cats: []
     }
 
   }
 
+  componentDidMount(){
+    this.readCat()
+  }
+
+  readCat = () => {
+    fetch("http://localhost:3000/cats").then(response => response.json()).then(catArray => this.setState({cats: catArray})).catch(errors => (console.log(errors)))
+  }
+ 
   createNewCat = (newcat) => {
   console.log(newcat)
 }
