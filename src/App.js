@@ -31,12 +31,30 @@ class App extends Component {
     fetch("http://localhost:3000/cats").then(response => response.json()).then(catArray => this.setState({cats: catArray})).catch(errors => (console.log(errors)))
   }
  
-  createNewCat = (newcat) => {
-  console.log(newcat)
-}
+  createNewCat = (newCat) => {
+    fetch("http://localhost:3000/cats", {
+      body: JSON.stringify(newCat),
+      headers: {
+        "Content-Type" : "application/json"
+      },
+      method: "POST"  
+    })
+    .then(response => response.json())
+    .then(payload => this.readCat())
+    .catch(errors => (console.log(errors)))
+  }
 
-  updateCat = (updatedInfo) => {
-  console.log(updatedInfo)
+  updateCat = (updatedInfo, id) => {
+  fetch(`http://localhost:3000/cats/${id}`, {
+    body: JSON.stringify(updatedInfo),
+    headers: {
+      "Content-Type" : "application/json"
+    },
+    method: "PATCH"
+  })
+  .then(response => response.json())
+  .then(payload => this.readCat())
+  .then(errors => (console.log(errors)))
 }
 
 
