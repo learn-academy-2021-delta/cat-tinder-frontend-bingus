@@ -28,7 +28,10 @@ class App extends Component {
   }
 
   readCat = () => {
-    fetch("http://localhost:3000/cats").then(response => response.json()).then(catArray => this.setState({cats: catArray})).catch(errors => (console.log(errors)))
+    fetch("http://localhost:3000/cats")
+    .then(response => response.json())
+    .then(catArray => this.setState({cats: catArray}))
+    .catch(errors => (console.log(errors)))
   }
  
   createNewCat = (newCat) => {
