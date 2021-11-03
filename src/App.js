@@ -8,7 +8,6 @@ import CatNew from './pages/CatNew'
 import CatEdit from './pages/CatEdit'
 import NotFound from './pages/NotFound' 
 import './App.css'
-import cats from './mockCats.js';
 import {
   BrowserRouter as Router,
   Route,
@@ -19,17 +18,55 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      cats: cats
+      cats: []
     }
 
   }
 
-  createNewCat = (newcat) => {
-  console.log(newcat)
+  componentDidMount(){
+    this.readCat()
+  }
+
+  readCat = () => {
+    fetch("http://localhost:3000/cats")
+    .then(response => response.json())
+    .then(catArray => this.setState({cats: catArray}))
+    .catch(errors => (console.log(errors)))
+  }
+ 
+  createNewCat = (newCat) => {
+    fetch("http://localhost:3000/cats", {
+      body: JSON.stringify(newCat),
+      headers: {
+        "Content-Type" : "application/json"
+      },
+      method: "POST"  
+    })
+    .then(response => response.json())
+    .then(payload => this.readCat())
+    .catch(errors => (console.log(errors)))
+  }
+
+  updateCat = (updatedInfo, id) => {
+  fetch(`http://localhost:3000/cats/${id}`, {
+    body: JSON.stringify(updatedInfo),
+    headers: {
+      "Content-Type" : "application/json"
+    },
+    method: "PATCH"
+  })
+  .then(response => response.json())
+  .then(payload => this.readCat())
+  .then(errors => (console.log(errors)))
 }
 
-  updateCat = (updatedInfo) => {
-  console.log(updatedInfo)
+deleteCat = (id) => {
+  fetch(`http://localhost:3000/cats/${id}`, {
+    headers: {
+      "Content-Type" : "application/json"
+    },
+    method: "DELETE"
+  })
 }
 
 
@@ -49,7 +86,7 @@ class App extends Component {
             render={(props) => {
               let id = props.match.params.id
               let cat = this.state.cats.find(c => c.id === +id)
-              return <CatShow cat={cat} />
+              return <CatShow cat={cat} deleteCat={this.deleteCat}/>
             }}
           />
           <Route path="/catnew" render={(props) => <CatNew createNewCat={this.createNewCat} />} />

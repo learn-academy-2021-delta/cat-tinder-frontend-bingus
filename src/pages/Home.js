@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 class Home extends Component {
   render() {
     return (
-      <div className="body-container">
+      <div className="home-screen">
         <h3 className="home">I am the Home</h3>
         <div id="button-container">
         <button onClick={this.props.alert}>Sign up Today!</button>
