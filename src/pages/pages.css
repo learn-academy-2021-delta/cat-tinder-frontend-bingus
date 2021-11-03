@@ -25,6 +25,7 @@
 
   #edit-title{
     font-size: 2rem;
+    padding: 3px;
     position: top;
     top: 130px;
   }
@@ -41,7 +42,8 @@
   #show-age{
     position: top;
     font-size: 1.5rem;
-    margin-top: 20%;
+    padding: 5px;
+    margin-top: 25%;
     background-color: white;
     border-radius:10px;
   }
@@ -55,14 +57,16 @@
   }
   #show-breed{
     position: top;
+    padding: 3px;
     font-size: 1rem;
-    margin-bottom: -50%;
+    margin-bottom: -40%;
     left: 12%;
     background-color: white;
     border-radius:10px;
   }
   #show-enjoy{
     position: top;
+    padding: 3px;
     font-size: 1.5rem;
     margin-top: 75%;
     background-color: white;
@@ -70,8 +74,17 @@
   }
   #show-edit{
     position: absolute;
+    padding: 3px;
     font-size: 1rem;
     bottom: 200px;
+   
+    background-color: white;
+  }
+  #show-delete{
+    position: absolute;
+    font-size: 1rem;
+    bottom: 250px;
+    
    
     background-color: white;
   }
@@ -103,6 +116,7 @@
   }
   .other-body-container{
     height: 380px;
+    padding: 1rem;
     background-color: rgb(243, 102, 151);
     width: 290px;
     position: relative;
@@ -110,3 +124,15 @@
     object-fit: cover;
     border-radius:10px;
   }
+
+  .home-screen{
+    background-image: url( "../assets/cattinderhome.png");
+    min-height: 88vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin: 0 10% 0 10%;
+  }
+

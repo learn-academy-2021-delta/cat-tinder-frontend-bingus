@@ -60,6 +60,15 @@ class App extends Component {
   .then(errors => (console.log(errors)))
 }
 
+deleteCat = (id) => {
+  fetch(`http://localhost:3000/cats/${id}`, {
+    headers: {
+      "Content-Type" : "application/json"
+    },
+    method: "DELETE"
+  })
+}
+
 
   render() {
 
@@ -77,7 +86,7 @@ class App extends Component {
             render={(props) => {
               let id = props.match.params.id
               let cat = this.state.cats.find(c => c.id === +id)
-              return <CatShow cat={cat} />
+              return <CatShow cat={cat} deleteCat={this.deleteCat}/>
             }}
           />
           <Route path="/catnew" render={(props) => <CatNew createNewCat={this.createNewCat} />} />

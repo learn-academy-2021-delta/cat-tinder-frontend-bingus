@@ -6,7 +6,7 @@ class Footer extends Component{
     return(
       <footer className="nav-links">
         <ul>
-          <NavLink to="/"> Meet Team Bingus</NavLink>
+          <a href="https://skribbl.io/"target="blank"> Meet Team Bingus</a>
         </ul>
         <ul>
           <NavLink to="/catindex">Find your Me-atch</NavLink>
